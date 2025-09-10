@@ -4,6 +4,8 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 let flowers = [];
+const flowerImg = new Image();
+flowerImg.src = 'assets/flower.png';
 
 function createFlower() {
     flowers.push({
@@ -15,9 +17,7 @@ function createFlower() {
 }
 
 function drawFlower(f) {
-    let img = new Image();
-    img.src = 'assets/flower.png';
-    ctx.drawImage(img, f.x, f.y, f.size, f.size);
+    ctx.drawImage(flowerImg, f.x, f.y, f.size, f.size);
 }
 
 function animateFlowers() {
@@ -68,6 +68,11 @@ window.addEventListener('scroll', () => {
     createFlower();
 });
 
+window.addEventListener('resize', () => {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+});
+
 particlesJS('particles-js', {
   "particles": {
     "number": {
@@ -111,6 +116,5 @@ particlesJS('particles-js', {
       }
     }
   }
-
 });
 
