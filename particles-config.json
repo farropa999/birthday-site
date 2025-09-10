@@ -1,0 +1,44 @@
+{
+  "particles": {
+    "number": {
+      "value": 80
+    },
+    "color": {
+      "value": ["#ff69b4", "#ffc0cb", "#fff0f5"]
+    },
+    "shape": {
+      "type": "image",
+      "image": [
+        {
+          "src": "assets/heart.png",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "src": "assets/flower.png",
+          "width": 20,
+          "height": 20
+        }
+      ]
+    },
+    "opacity": {
+      "value": 0.7
+    },
+    "size": {
+      "value": 10,
+      "random": true
+    },
+    "move": {
+      "enable": true,
+      "speed": 2
+    }
+  },
+  "interactivity": {
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "repulse"
+      }
+    }
+  }
+}
