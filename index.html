@@ -6,10 +6,9 @@
     <title>Happy Birthday Pradnya!</title>
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
 <body>
-    <div id="particles-js"></div> <!-- Move this here -->
+    <div id="particles-js"></div>  <!-- ✅ Moved here -->
 
     <div class="container">
         <section id="welcome">
@@ -37,6 +36,8 @@
 
     <canvas id="fallingCanvas"></canvas>
 
+    <!-- ✅ Load particles.js just before your own script -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
