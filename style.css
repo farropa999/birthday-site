@@ -1,0 +1,66 @@
+body {
+    font-family: 'Pacifico', cursive;
+    background: linear-gradient(to bottom, #ffe6f0, #fff8f5);
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    text-align: center;
+    padding: 50px;
+}
+
+h1, h2 {
+    color: #ff69b4;
+}
+
+button {
+    background: #ffb6c1;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+section {
+    padding: 80px 20px;
+    min-height: 100vh;
+}
+
+.soft-toy {
+    width: 150px;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.heart {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background: red;
+    transform: translateY(0);
+    border-radius: 50%;
+    animation: floatUp 3s forwards;
+}
+
+@keyframes floatUp {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(-600px); opacity: 0; }
+}
